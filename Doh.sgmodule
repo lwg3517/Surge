@@ -2,4 +2,4 @@
 #!desc=DNS over HTTPS (DoH).
 
 [General]
-doh-server = https://dns.alidns.com/dns-query
+doh-server = https://dh-dns.global-idc.net/dns-query
