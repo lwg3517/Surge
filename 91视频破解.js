@@ -1,0 +1,1 @@
+request-header (\r\n)X-AUTH-TOKEN:.+(\r\n) request-header $1X-AUTH-TOKEN:eyJhbGciOiJIUzUxMiIsImlhdCI6MTYxNjczNTcxOCwiZXhwIjoxOTMyMDk1NzE4fQ.eyJpZCI6NDEwODI3MzF9.FpVBEFqi0Jh_ywCZP-uoWm8O_yfRsKVhhr6ST-4gG2UGIdF-2BisL_LuWtDB3uiFonKeLF9bgmyaSdOo6yAM5g$2
