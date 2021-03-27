@@ -3,12 +3,14 @@
 #!system=ios
 
 [MITM]
-hostname =  %APPEND% oia.zhihu.com, link.zhihu.com, www.zhihu.com,*.baidu.com
+hostname =  %APPEND% oia.zhihu.com, link.zhihu.com, www.zhihu.com,*.baidu.com,api.rcljx.com,www.google.cn
 
 [URL Rewrite]
 ^https://oia\.zhihu\.com/articles/([0-9]+)\?.* https://zhuanlan.zhihu.com/p/$1 307
 ^https://oia\.zhihu\.com/answers/([0-9]+)\?.* https://www.zhihu.com/answer/$1 307
 ^https?://link\.zhihu\.com/\?target=(https?)%3A//(.*) $1://$2 307
+
+^(http|https):\/\/(www.)?(g|google)\.cn https://www.google.com 302
 
 [Header Rewrite]
 ^https://www\.zhihu\.com\/(question|topic) header-replace User-Agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
