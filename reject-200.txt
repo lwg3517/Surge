@@ -1,0 +1,2 @@
+^http[s]?:\/\/api.(.+).(buzz|com)\/api\/user\/voucher url reject-200
+^http[s]?:\/\/api.(.+).(buzz|com)\/api\/.+  url script-request-header https://6678888.xyz/quantumultX/sangeng.js
